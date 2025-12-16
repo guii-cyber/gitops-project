@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: heh-flask
-          image: heh-flask:latest
+          image: assiimm/heh-flask:latest
           ports:
             - containerPort: 5000

@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: heh-flask
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: heh-flask
   template:
     metadata:
       labels:
-        app: myapp
+        app: heh-flask
     spec:
       containers:
-        - name: myapp
-          image: ghcr.io/TON_USER/TON_REPO:latest
+        - name: heh-flask
+          image: heh-flask:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 5000

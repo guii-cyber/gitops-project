@@ -16,11 +16,6 @@ spec:
     spec:
       containers:
         - name: heh-flask
-<<<<<<< HEAD
           image: assiimm/heh-flask:PLACEHOLDER
           imagePullPolicy: IfNotPresent
-=======
-          image: assiimm/heh-flask:09d64186fb4015d9e0aa7404daf4fbf8af8aa557
->>>>>>> bda9c7a78d5b6a6c2ff4ec52e37b92a03f74e50f
-          ports:
-            - containerPort: 5000
+

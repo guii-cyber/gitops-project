@@ -31,7 +31,8 @@ jobs:
 
       - name: Update Kubernetes manifest with new tag
         run: |
-          sed -i "s|image: .*heh-flask:.*|image: ${{ secrets.DOCKERHUB_USERNAME }}/heh-flask:${{ github.sha }}|g" k8s/deployment.yml
+          sed -i "s|image: ${{ secrets.DOCKERHUB_USERNAME }}/heh-flask:.*|image: ${{ secrets.DOCKERHUB_USERNAME }}/heh-flask:${{ github.sha }}|g" k8s/deployment.yml
+
 
       - name: Commit and push manifest update
         run: |
